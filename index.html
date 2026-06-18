@@ -22,10 +22,10 @@ text-align:center;
 padding:0 20px 80px;
 }
 .logo{
-width:min(100vw,1800px);
-max-width:100%;
-max-height:90vh;
+width:100vw;
+height:72vh;
 object-fit:contain;
+display:block;
 filter:drop-shadow(0 0 70px cyan);
 animation:pulse2 5s ease-in-out infinite !important;
 }
@@ -37,11 +37,19 @@ h1{font-size:clamp(60px,9vw,130px)}
 .price{font-size:28px;color:#00ffff}
 .btn{display:inline-block;margin:10px;padding:16px 28px;border-radius:20px;text-decoration:none;color:white;background:linear-gradient(90deg,#00d9ff,#6f63ff)}
 footer{text-align:center;padding:50px}
+
 @media(max-width:700px){
 .logo{
-width:100vw;
+width:85vw;
+height:auto;
 max-height:50vh;
+object-fit:contain;
 }
+.hero{
+padding-top:20px;
+}
+}
+
 .hero{
 padding-top:0;
 }
